@@ -26,12 +26,12 @@ def plot_keyword_frequency_bar(reviews, top_n=15):
     plt.figure(figsize=(10, 5))
     bars = plt.bar(keywords, counts, color="#c6a5e6")
 
-     # Optional: Add 10% headroom above the tallest bar
+     # headroom above the tallest bar
     max_count = max(counts)
     plt.ylim(0, max_count + max_count * 0.2)
 
 
-    # 🖋 Titles & labels
+    # Titles & labels
     plt.title("Top Dog-Related Keyword Frequency in Reviews", fontsize=16, fontweight='bold')
     plt.xlabel("Keywords", fontsize=12, fontweight='bold')
     plt.ylabel("Frequency", fontsize=12, fontweight='bold')
@@ -39,7 +39,7 @@ def plot_keyword_frequency_bar(reviews, top_n=15):
     plt.yticks(fontsize=10)
 
 
-    # 🔢 Add value labels (tickers) on top of each bar
+    # Add value labels (tickers) on top of each bar
     for bar in bars:
         height = bar.get_height()
         plt.annotate(f'{height}',
@@ -66,7 +66,7 @@ def plot_review_keyword_coverage_pie(reviews):
     sizes = [with_keywords, without_keywords]
     colors = ["#b3d68d", "#ebd89d"]
 
-    fig, ax = plt.subplots(figsize=(8, 6))  # use fig, ax instead of plt.figure
+    fig, ax = plt.subplots(figsize=(8, 6)) 
     wedges, _, autotexts = plt.pie(
         sizes,
         autopct='%1.1f%%',
