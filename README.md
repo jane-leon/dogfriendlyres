@@ -20,20 +20,18 @@
 ---
 
 ## Project Structure
-├── data/ # Stores scraped reviews
-│ └── place_reviews.csv
-├── utils/ # Helper functions
-│ ├── keyword_analyzer.py
-│ ├── save_to_csv.py
-│ └── visualizer.py #visualizations of bar/pie charts
-├── venv/ # not included
-├── .env # not included, must create with api keys
-├── .gitignore
-├── analyze_with_openai.py # GPT-4 analysis code
-├── barkometer_score.py # Calls analyzer and prints results
-├── main.py # Main script to run the full pipeline
-├── requirements.txt # All required Python packages
-└── README.md
+- data/ # Stores scraped reviews
+    - place_reviews.csv
+- utils/ # Helper functions
+    - keyword_analyzer.py #some helper function for matching reviews/keywords
+    - save_to_csv.py #code to save reviews to csv format
+    - visualizer.py #bar/pie charts code
+- .gitignore
+- analyze_with_openai.py # prompt for GPT-4 analysis
+- barkometer_scraper,py #connects to Apify and scrapes reviews
+- main.py # Main script to run the full pipeline
+- requirements.txt # All required Python packages
+- README.md
 
 ## Getting Started
  1. Clone the repository
