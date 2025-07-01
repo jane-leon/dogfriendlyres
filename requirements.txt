@@ -1,0 +1,5 @@
+openai
+apify-client
+python-dotenv
+pandas
+matplotlib

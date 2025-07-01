@@ -1,0 +1,14 @@
+# Ignore virtual environments
+venv/
+
+# Ignore secret config
+.env
+
+# __pycache__ and Python compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# macOS metadata
+.DS_Store
