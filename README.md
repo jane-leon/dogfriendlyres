@@ -1,6 +1,6 @@
-# 🐾 Barkometer
+# 🐾 Sniffr
 
-**Barkometer** is an AI-powered tool that analyzes Google Maps reviews to determine how dog-friendly a place is. It extracts relevant keywords, visualizes review patterns, and uses GPT-4 to give each location a dog-friendliness score from 0 to 10.
+**Sniffr** is an AI-powered tool that analyzes Google Maps reviews to determine how dog-friendly a place is. It extracts relevant keywords, visualizes review patterns, and uses GPT-4 to give each location a dog-friendliness score from 0 to 10.
 
 ---
 

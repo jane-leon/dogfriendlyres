@@ -14,7 +14,7 @@ from utils.visualizer import plot_keyword_frequency_bar, plot_review_keyword_cov
 def run_barkometer():
     load_dotenv()
 
-    print("🐾 Barkometer: AI-Powered Dog-Friendliness Analyzer")
+    print("🐾 Sniffr: AI-Powered Dog-Friendliness Analyzer")
     maps_url = input("📍 Paste a Google Maps URL: ").strip()
 
     if not maps_url.startswith("https://www.google.com/maps"):
@@ -40,7 +40,7 @@ def run_barkometer():
     print("\n🤖 Analyzing dog-friendliness with OpenAI...")
     result = rate_dog_friendliness_with_openai(reviews)
 
-    print("\n===== 🐶 Barkometer Rating =====")
+    print("\n===== 🐶 Sniffr Rating =====")
     print(result)
 
     print("\n🔍 Matched Reviews (Direct Keywords):")
